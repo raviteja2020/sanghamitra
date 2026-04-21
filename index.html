@@ -15,21 +15,18 @@
             background-color: #fdfdfd;
         }
 
-        .bg-success-green {
-            background-color: #22c55e;
+        /* Updated to match the deeper, professional greens of the logo */
+        .bg-brand-green {
+            background-color: #15803d;
         }
 
-        .text-success-green {
-            color: #16a34a;
-        }
-
-        .border-success-green {
-            border-color: #22c55e;
+        .text-brand-green {
+            color: #15803d;
         }
 
         .hero-pattern {
             background-color: #f0fdf4;
-            background-image: radial-gradient(#22c55e22 1px, transparent 1px);
+            background-image: radial-gradient(#15803d15 1px, transparent 1px);
             background-size: 20px 20px;
         }
 
@@ -41,11 +38,17 @@
 
         .card-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
         }
 
         .curved-edge {
             border-radius: 2rem;
+        }
+
+        .logo-img {
+            width: 56px;
+            height: 56px;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -56,24 +59,26 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center space-x-4">
-                    <div class="relative w-14 h-14 flex items-center justify-center">
+                    <!-- Updated to use static logo.png -->
+                    <div class="relative">
+                        <img src="logo.png" alt="Sanghamitra Foundation Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/100?text=Logo'">
                     </div>
                     <div>
-                        <h1 class="text-xl font-extrabold text-green-800 tracking-tight leading-none">Sanghamitra Foundation</h1>
-                        <p class="text-sm text-green-600 font-bold mt-1">సంఘమిత్ర ఫౌండేషన్</p>
+                        <h1 class="text-xl font-extrabold text-green-900 tracking-tight leading-none">Sanghamitra Foundation</h1>
+                        <p class="text-sm text-green-700 font-bold mt-1">సంఘమిత్ర ఫౌండేషన్</p>
                     </div>
                 </div>
                 
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-green-600 font-semibold transition">About Us</a>
-                    <a href="#initiatives" class="text-gray-600 hover:text-green-600 font-semibold transition">Our Work</a>
-                    <a href="#impact" class="text-gray-600 hover:text-green-600 font-semibold transition">Impact</a>
-                    <a href="#contact" class="bg-green-600 text-white px-7 py-3 rounded-full font-bold hover:bg-green-700 transition shadow-md hover:shadow-lg">
+                    <a href="#about" class="text-gray-600 hover:text-green-700 font-semibold transition">About Us</a>
+                    <a href="#initiatives" class="text-gray-600 hover:text-green-700 font-semibold transition">Our Work</a>
+                    <a href="#impact" class="text-gray-600 hover:text-green-700 font-semibold transition">Impact</a>
+                    <a href="#contact" class="bg-green-700 text-white px-7 py-3 rounded-full font-bold hover:bg-green-800 transition shadow-md hover:shadow-lg">
                         Support Us
                     </a>
                 </div>
 
-                <button id="mobile-menu-btn" class="lg:hidden text-green-700 text-2xl">
+                <button id="mobile-menu-btn" class="lg:hidden text-green-800 text-2xl">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -84,7 +89,7 @@
             <a href="#about" class="block text-gray-700 font-bold">About Us</a>
             <a href="#initiatives" class="block text-gray-700 font-bold">Our Work</a>
             <a href="#impact" class="block text-gray-700 font-bold">Impact</a>
-            <a href="#contact" class="block bg-green-600 text-white text-center py-3 rounded-xl">Support Us</a>
+            <a href="#contact" class="block bg-green-700 text-white text-center py-3 rounded-xl">Support Us</a>
         </div>
     </nav>
 
@@ -94,27 +99,26 @@
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2 text-center lg:text-left">
                     <div class="inline-flex items-center space-x-2 bg-green-100 px-4 py-2 rounded-full mb-6">
-                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                        <span class="text-green-700 text-sm font-bold uppercase tracking-widest">Friend of Society</span>
+                        <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
+                        <span class="text-green-800 text-sm font-bold uppercase tracking-widest">Friend of Society</span>
                     </div>
                     <h2 class="text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-8">
-                        Lighting the Path to <span class="text-green-600">Education.</span>
+                        Lighting the Path to <span class="text-green-700">Education.</span>
                     </h2>
                     <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
                         At Sanghamitra Foundation, we believe in the power of community. Through our local teacher networks, we provide dedicated after-school study hours for rural children, ensuring they thrive in their educational journey.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#initiatives" class="px-10 py-5 bg-green-600 text-white rounded-2xl font-extrabold text-lg shadow-xl shadow-green-200 hover:bg-green-700 transition-all hover:-translate-y-1">
+                        <a href="#initiatives" class="px-10 py-5 bg-green-700 text-white rounded-2xl font-extrabold text-lg shadow-xl shadow-green-100 hover:bg-green-800 transition-all hover:-translate-y-1">
                             Explore Programs
                         </a>
-                        <a href="#contact" class="px-10 py-5 bg-white text-green-700 border-2 border-green-100 rounded-2xl font-extrabold text-lg hover:bg-green-50 transition-all">
+                        <a href="#contact" class="px-10 py-5 bg-white text-green-800 border-2 border-green-100 rounded-2xl font-extrabold text-lg hover:bg-green-50 transition-all">
                             Partner With Us
                         </a>
                     </div>
                 </div>
                 <div class="lg:w-1/2 relative">
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-200 rounded-full blur-3xl opacity-50"></div>
-                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-200 rounded-full blur-3xl opacity-30"></div>
                     <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                          alt="Teacher with students" 
                          class="rounded-[3rem] shadow-2xl relative z-10 object-cover h-[500px] w-full border-8 border-white">
@@ -127,19 +131,19 @@
     <section id="about" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h3 class="text-green-600 font-black uppercase tracking-widest text-sm mb-4">Our Core Mission</h3>
-                <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900">Dedicated Study Hours. <br><span class="text-green-600">Empowered Futures.</span></h2>
+                <h3 class="text-green-700 font-black uppercase tracking-widest text-sm mb-4">Our Core Mission</h3>
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900">Dedicated Study Hours. <br><span class="text-green-700">Empowered Futures.</span></h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-green-50 p-10 curved-edge card-hover transition-all">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                        <i class="fas fa-school text-green-600 text-2xl"></i>
+                        <i class="fas fa-school text-green-700 text-2xl"></i>
                     </div>
                     <h4 class="text-2xl font-bold mb-4 text-green-900">Gather</h4>
                     <p class="text-gray-600 leading-relaxed">Our teachers identify children who need extra help and gather them in safe, comfortable local environments after school hours.</p>
                 </div>
-                <div class="bg-green-600 p-10 curved-edge card-hover transition-all shadow-xl shadow-green-200">
+                <div class="bg-green-700 p-10 curved-edge card-hover transition-all shadow-xl shadow-green-100">
                     <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-8">
                         <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
                     </div>
@@ -148,45 +152,10 @@
                 </div>
                 <div class="bg-green-50 p-10 curved-edge card-hover transition-all">
                     <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                        <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                        <i class="fas fa-seedling text-green-700 text-2xl"></i>
                     </div>
                     <h4 class="text-2xl font-bold mb-4 text-green-900">Nurture</h4>
                     <p class="text-gray-600 leading-relaxed">Beyond academics, we foster a sense of community and social responsibility, true to our name Sanghamitra.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Showcase Section -->
-    <section class="py-24 bg-gray-50 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-[3rem] p-8 lg:p-16 shadow-xl border border-green-50 flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-1/2">
-                    <div class="bg-green-600 aspect-video rounded-3xl relative shadow-2xl flex items-center justify-center group cursor-pointer overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" 
-                             alt="Video thumbnail">
-                        <button class="w-24 h-24 bg-white text-green-600 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-125 transition-all relative z-10">
-                            <i class="fas fa-play text-3xl ml-2"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-black text-gray-900 mb-6 leading-tight">Seeing the <span class="text-green-600">Smile</span> of Progress</h2>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Watch how a 2-hour daily commitment from local teachers is transforming the literacy levels and career aspirations of rural school children in Telangana.
-                    </p>
-                    <div class="flex items-center space-x-6 text-green-700 font-extrabold">
-                        <div class="flex flex-col">
-                            <span class="text-4xl">5,000+</span>
-                            <span class="text-xs uppercase tracking-tighter opacity-70">Learning Hours / Year</span>
-                        </div>
-                        <div class="w-px h-12 bg-green-200"></div>
-                        <div class="flex flex-col">
-                            <span class="text-4xl">100%</span>
-                            <span class="text-xs uppercase tracking-tighter opacity-70">Teacher Commitment</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -197,40 +166,40 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                 <div class="md:w-2/3">
-                    <h3 class="text-green-600 font-bold uppercase tracking-widest text-sm mb-4">Expanding Support</h3>
+                    <h3 class="text-green-700 font-bold uppercase tracking-widest text-sm mb-4">Expanding Support</h3>
                     <h2 class="text-4xl font-extrabold text-gray-900">Our Evolving Focus</h2>
                     <p class="text-gray-500 mt-4 text-lg">As a 'Friend of Society', we are extending our hands beyond the classroom to serve every layer of rural life.</p>
                 </div>
-                <a href="#contact" class="text-green-600 font-bold hover:underline mb-2">Partner with us in expansion <i class="fas fa-arrow-right ml-2"></i></a>
+                <a href="#contact" class="text-green-700 font-bold hover:underline mb-2">Partner with us in expansion <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="p-8 border-2 border-green-50 rounded-[2rem] hover:border-green-200 transition-all group">
-                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
-                        <i class="fas fa-users-cog text-green-600 group-hover:text-white transition-colors"></i>
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-700 transition-colors">
+                        <i class="fas fa-users-cog text-green-700 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Community Service</h4>
+                    <h4 class="text-xl font-bold mb-3 text-green-900">Community Service</h4>
                     <p class="text-gray-500 text-sm">Solving local sanitation and water issues through community mobilization.</p>
                 </div>
                 <div class="p-8 border-2 border-green-50 rounded-[2rem] hover:border-green-200 transition-all group">
-                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
-                        <i class="fas fa-heartbeat text-green-600 group-hover:text-white transition-colors"></i>
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-700 transition-colors">
+                        <i class="fas fa-heartbeat text-green-700 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Elder Care</h4>
+                    <h4 class="text-xl font-bold mb-3 text-green-900">Elder Care</h4>
                     <p class="text-gray-500 text-sm">Providing medical aid and social companionship to the elderly in villages.</p>
                 </div>
                 <div class="p-8 border-2 border-green-50 rounded-[2rem] hover:border-green-200 transition-all group">
-                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
-                        <i class="fas fa-graduation-cap text-green-600 group-hover:text-white transition-colors"></i>
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-700 transition-colors">
+                        <i class="fas fa-graduation-cap text-green-700 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Higher Ed Coaching</h4>
+                    <h4 class="text-xl font-bold mb-3 text-green-900">Higher Ed Coaching</h4>
                     <p class="text-gray-500 text-sm">Guidance for competitive exams to help rural students enter top universities.</p>
                 </div>
                 <div class="p-8 border-2 border-green-50 rounded-[2rem] hover:border-green-200 transition-all group">
-                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
-                        <i class="fas fa-globe-asia text-green-600 group-hover:text-white transition-colors"></i>
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-700 transition-colors">
+                        <i class="fas fa-globe-asia text-green-700 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Village Digital Labs</h4>
+                    <h4 class="text-xl font-bold mb-3 text-green-900">Village Digital Labs</h4>
                     <p class="text-gray-500 text-sm">Establishing computer centers to bridge the digital divide in education.</p>
                 </div>
             </div>
@@ -238,7 +207,7 @@
     </section>
 
     <!-- Support/CTA Section -->
-    <section id="contact" class="py-24 bg-green-600 rounded-[4rem] mx-4 my-20">
+    <section id="contact" class="py-24 bg-green-700 rounded-[4rem] mx-4 my-20">
         <div class="max-w-7xl mx-auto px-8 text-center">
             <h2 class="text-4xl lg:text-5xl font-black text-white mb-8">Ready to support the next <br>generation of rural leaders?</h2>
             <div class="flex flex-wrap justify-center gap-6">
@@ -246,13 +215,13 @@
                     <i class="fas fa-donate text-3xl text-white mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Donate Fund</h3>
                     <p class="text-green-50 text-sm mb-6">Your contributions provide teaching materials and refreshments for the kids.</p>
-                    <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold w-full hover:bg-green-50 transition">Give Now</button>
+                    <button class="bg-white text-green-700 px-8 py-3 rounded-xl font-bold w-full hover:bg-green-50 transition">Give Now</button>
                 </div>
                 <div class="bg-white p-8 rounded-3xl w-full md:w-80 shadow-2xl">
-                    <i class="fas fa-hands-helping text-3xl text-green-600 mb-4"></i>
+                    <i class="fas fa-hands-helping text-3xl text-green-700 mb-4"></i>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Volunteer</h3>
                     <p class="text-gray-500 text-sm mb-6">Are you a teacher or a student? Join our weekend mentoring programs.</p>
-                    <button class="bg-green-600 text-white px-8 py-3 rounded-xl font-bold w-full hover:bg-green-700 transition">Sign Up</button>
+                    <button class="bg-green-700 text-white px-8 py-3 rounded-xl font-bold w-full hover:bg-green-800 transition">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -264,48 +233,45 @@
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
-                        <div class="bg-green-600 p-2 rounded-lg text-white">
-                            <i class="fas fa-hand-holding-heart text-2xl"></i>
-                        </div>
-                        <h2 class="text-2xl font-black text-green-800">Sanghamitra Foundation</h2>
+                        <img src="logo.png" alt="Logo" class="w-12 h-12 object-contain" onerror="this.src='https://via.placeholder.com/100?text=Logo'">
+                        <h2 class="text-2xl font-black text-green-900">Sanghamitra Foundation</h2>
                     </div>
                     <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">
                         A registered NGO dedicated to rural upliftment. We empower teachers to transform their local communities one study hour at a time.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-green-50 text-green-600 flex items-center justify-center rounded-full hover:bg-green-600 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 bg-green-50 text-green-600 flex items-center justify-center rounded-full hover:bg-green-600 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 bg-green-50 text-green-600 flex items-center justify-center rounded-full hover:bg-green-600 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 bg-green-50 text-green-700 flex items-center justify-center rounded-full hover:bg-green-700 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-green-50 text-green-700 flex items-center justify-center rounded-full hover:bg-green-700 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-green-50 text-green-700 flex items-center justify-center rounded-full hover:bg-green-700 hover:text-white transition"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-black text-gray-900 uppercase tracking-widest text-xs mb-6">Quick Links</h4>
+                    <h4 class="font-black text-gray-900 uppercase tracking-widest text-xs mb-6 text-green-900">Quick Links</h4>
                     <ul class="space-y-4 text-gray-500 font-medium">
-                        <li><a href="#about" class="hover:text-green-600 transition">About Foundation</a></li>
-                        <li><a href="#initiatives" class="hover:text-green-600 transition">Study Programs</a></li>
-                        <li><a href="#impact" class="hover:text-green-600 transition">Impact Reports</a></li>
-                        <li><a href="#contact" class="hover:text-green-600 transition">Volunteer Portal</a></li>
+                        <li><a href="#about" class="hover:text-green-700 transition">About Foundation</a></li>
+                        <li><a href="#initiatives" class="hover:text-green-700 transition">Study Programs</a></li>
+                        <li><a href="#impact" class="hover:text-green-700 transition">Impact Reports</a></li>
+                        <li><a href="#contact" class="hover:text-green-700 transition">Volunteer Portal</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-black text-gray-900 uppercase tracking-widest text-xs mb-6">Contact</h4>
+                    <h4 class="font-black text-gray-900 uppercase tracking-widest text-xs mb-6 text-green-900">Contact</h4>
                     <p class="text-gray-500 mb-2">Ramachandrapuram, Telangana</p>
                     <p class="text-gray-500 mb-6">+91 999 000 1122</p>
-                    <p class="font-black text-green-800 tracking-widest text-xs uppercase">సంఘమిత్ర ఫౌండేషన్</p>
+                    <p class="font-black text-green-900 tracking-widest text-xs uppercase">సంఘమిత్ర ఫౌండేషన్</p>
                 </div>
             </div>
             <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs gap-4">
                 <p>&copy; 2024 Sanghamitra Foundation. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="hover:text-green-600">Privacy Policy</a>
-                    <a href="#" class="hover:text-green-600">Terms of Service</a>
+                    <a href="#" class="hover:text-green-700">Privacy Policy</a>
+                    <a href="#" class="hover:text-green-700">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Logic
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -316,7 +282,6 @@
             icon.classList.toggle('fa-times');
         });
 
-        // Close menu on click
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
